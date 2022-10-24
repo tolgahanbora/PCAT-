@@ -1,18 +1,17 @@
 import express from 'express';
 //dosya konumlarını sağlayan fonk import ettim.
 import  MethodOverride from 'method-override';
-
+import dotenv from 'dotenv'
 import mongoose from 'mongoose';
 import fileUpload from 'express-fileupload';
 import {getHomePage,getAboutPage,getEditPage,getAddPage,getPhotoPage } from '../PCAT/Controller/PageController.js'
 import {getPhotoUpload,getPhotoEdit,getPhotoDelete} from '../PCAT/Controller/PhotoController.js'
 
-
+dotenv.config()
 const app = express()
-const port = 3000
-
+const port = process.env.PORT || 5000
 //MONGOOSE CONNECT
-mongoose.connect("mongodb://127.0.0.1:27017/pcat-test-db")
+mongoose.connect(`${process.env.DB_URI}`).then(() => console.log("mongodb CONNECTED")).catch((err) => console.log("err"))
 
 
 
