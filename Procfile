@@ -1,2 +1,2 @@
-web: node PCAT/app.js
+web: node app.js
 
