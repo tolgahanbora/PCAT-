@@ -4,7 +4,7 @@ import  MethodOverride from 'method-override';
 import dotenv from 'dotenv'
 import mongoose from 'mongoose';
 import fileUpload from 'express-fileupload';
-import {getHomePage,getAboutPage,getEditPage,getAddPage,getPhotoPage } from './Controller/PageController'
+import {getHomePage,getAboutPage,getEditPage,getAddPage,getPhotoPage } from './Controller/PageController.js'
 import {getPhotoUpload,getPhotoEdit,getPhotoDelete} from './Controller/PhotoController'
 
 dotenv.config()
