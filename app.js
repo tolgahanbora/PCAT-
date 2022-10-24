@@ -46,8 +46,8 @@ app.put("/photos/:id" , getPhotoEdit)
 
 app.delete("/photos/:id", getPhotoDelete)
 
-app.listen(port, () => {
-    console.log(`Server ${port}unda up edildi.`)
+app.listen( port, () => {
+    console.log(`Server ${ process.env.PORT}unda up edildi.`)
 })
 
 //Ek olarak: index.html de bulunan sayfaların ahref taglerini, /add ve /about gibi isimlendirdiğim path yolu ile güncelleştirdim. yoksa çalışmıyor.
