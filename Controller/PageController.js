@@ -1,6 +1,5 @@
 import Photo from '../Model/Photo.js'
-import mongoose from 'mongoose';
-import fileUpload from 'express-fileupload'
+
 
 const getHomePage = async (req, res) =>{
     

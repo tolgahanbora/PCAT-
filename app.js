@@ -11,7 +11,7 @@ dotenv.config()
 const app = express()
 let port = process.env.PORT
 //MONGOOSE CONNECT
-mongoose.connect(`${process.env.DB_URI}`).then(() => console.log("mongodb CONNECTED")).catch((err) => console.log("err"))
+mongoose.connect(`${process.env.DB_URI}`)
 
 
 
