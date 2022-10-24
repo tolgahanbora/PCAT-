@@ -9,7 +9,7 @@ import {getPhotoUpload,getPhotoEdit,getPhotoDelete} from './Controller/PhotoCont
 
 dotenv.config()
 const app = express()
-let port = process.env.PORT || 5000
+let port = process.env.PORT
 //MONGOOSE CONNECT
 mongoose.connect(`${process.env.DB_URI}`).then(() => console.log("mongodb CONNECTED")).catch((err) => console.log("err"))
 
