@@ -2,9 +2,9 @@
   "name": "pcat",
   "version": "1.0.0",
   "description": "PCAT project is a product intoduction app",
-  "main": "app.js",
+  "main": "/app.js",
   "scripts": {
-    
+    "build": "node ace build --production",
     "start": "node app.js"
   },
   "repository": {
