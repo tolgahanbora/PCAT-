@@ -1,2 +1,2 @@
-web: node build
+web: node PCAT/app.js
 
