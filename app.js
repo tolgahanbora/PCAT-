@@ -5,7 +5,7 @@ import dotenv from 'dotenv'
 import mongoose from 'mongoose';
 import fileUpload from 'express-fileupload';
 import {getHomePage,getAboutPage,getEditPage,getAddPage,getPhotoPage } from './Controller/PageController.js'
-import {getPhotoUpload,getPhotoEdit,getPhotoDelete} from './Controller/PhotoController'
+import {getPhotoUpload,getPhotoEdit,getPhotoDelete} from './Controller/PhotoController.js'
 
 dotenv.config()
 const app = express()
