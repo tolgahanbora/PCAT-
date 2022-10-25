@@ -25,7 +25,7 @@ app.use(MethodOverride('_method', {
 }))
 
 // TEMPLATE ENGİNE
-app.set('views', __dirname + '/views')
+
 app.set("view engine", "ejs") //template engine modülünü set ettim
 
 
