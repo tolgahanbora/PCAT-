@@ -12,7 +12,7 @@ const getHomePage = async (req, res) =>{
     .sort('-dateCreated')
     .skip((page-1) * photosPerPage) //mongoDB de bulunan ve sayfada gösterilen verileri pas geçemeye yarar. üzerinde düşündüğünde anlarsın. mantık yürüt. mesela, sayfa 3'tesin, 3-1 = 2 * 2 = 4 eder. yani ilk 4 veriyi pas geçeceeksin anlamında iş görür bu fonksiyon.
     .limit(photosPerPage) //sayfa başına gösterilmesi gereken fonksiyon yani limit.
-    res.render("index.ejs" , {
+    res.render("index" , {
         photos: photos,
         current: page , //o anda ki sayfaya karşılık gelir. hangi sayfadaysan onu gösterir.
         pages: Math.ceil(totalPhotos / photosPerPage) //5 fotoğrafın varsa math.ceil ile sayfaya yuvarlar. 
